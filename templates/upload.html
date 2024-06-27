@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Analyzer</title>
+    <style>
+        .btn{
+            cursor: pointer;width: 70%;padding: 10px;border: none;border-radius: 20px;
+            transition: all 0.5s ease;
+        }
+        .btn:hover{
+            color: white;
+            background-color: rgb(53, 199, 0);
+            
+        }
+        #main{
+            background: rgba(220, 177, 255, 0.645);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            height: 50vh;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px 0px rgb(188, 137, 255);
+            transition: all 0.8s ease;
+            margin-bottom: 100px;
+        }
+        #main:hover{
+            box-shadow: 0px 0px 30px 0px rgb(188, 137, 255);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Nova+Square&display=swap" rel="stylesheet">
+</head>
+<body style="overflow: hidden;">
+    <header style="display: flex;">
+        <div style="font-size: 10px; padding-left: 30px;font-family: Edu NSW ACT Foundation;cursor:default;">
+            <h1>WhatsApp Chat Analyzer</h1>
+        </div>
+    </header>
+    <section style="display: flex;justify-content: left;align-items: center;height: 100vh;flex-direction: row;margin-left: 50px; gap: 50;">
+        <img src="/static/giphy.gif" style="width: 38%;border-radius: 20px;margin-bottom: 100px;">
+       
+
+    
+    
+    <section id="main">
+        <h1 style="position: absolute;transform: translateY(-120px); font-size: 30px;font-family:Arial, sans-serif;">Upload Chat File</h1>
+       
+        <form action="/result" method="post" enctype="multipart/form-data" style="padding: 40px;margin-left: 70px;">
+            <input type="file" name="file" accept=".txt" class="file" required><br><br>
+            <input type="submit" value="Submit" class="btn" btn="btn">
+        </form>
+    </section>
+</section>
+
+</body>
+</html>
